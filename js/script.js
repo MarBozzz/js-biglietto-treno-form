@@ -24,9 +24,11 @@ btnInput.addEventListener('click', function(){
 });
 
 //resetto il value dell'input
-const btnInputReset = document.getElementById('btn-input-2');
+const btnInputReset = document.getElementById('btn-input-reset');
+
 btnInputReset.addEventListener('click', function(){
 document.getElementById('input-name-surname').value = '';
 document.getElementById('km-da-percorrere').value = '';
 document.getElementById('eta-dichiarata').value = '';
+document.getElementById('output-prezzo').innerHTML = '';
 });
