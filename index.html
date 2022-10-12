@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Biglietto Treno</title>
+</head>
+<body>
+
+  <div class="wrapper-container d-flex flex-column align-center p-3">
+
+    <h2 class="p-1">Calcola il prezzo del tuo biglietto</h2>
+
+    <div class="container primo d-flex flex-column p-1">
+      <nav>
+        <ul class="d-flex justify-around">
+          <li>
+            <span>Nome e Cognome</span><br>
+            <!-- <input type="text" value=""> -->
+            <input id="input-name-surname" type="text" value="" placeholder="Nome e Cognome">
+          </li>
+          <li>
+            <span>Km da percorrere</span><br>
+            <input id="km-da-percorrere" type="text" value="">
+          </li>
+          <li>
+            <span>Fascia d'età</span><br>
+            <div class="">
+              <select id="eta-dichiarata">
+                <option value="Under 18">Under 18</option>
+                <option value="Adulto">Adulto</option>
+                <option value="Over 65">Over 65</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="d-flex justify-center p-1">
+        <button id="btn-input">Genera</button>
+        <button class="btn">Annulla</button>
+      </div>
+    </div>
+
+    <h2 class="p-1">Il tuo biglietto</h2>
+
+    <div class="container secondo p-1">
+
+      <h3 class="p-1">Dettaglio Passeggeri</h3>
+      <nav>
+        <ul class="d-flex">
+          <li>
+            <span>Nome Passeggero</span><br>
+            <h4 id="output-name"></h4>
+          </li>
+          <li>
+            <span>Offerta</span><br>
+          </li>
+          <li>
+            <span>Carrozza</span><br>
+          </li>
+          <li>
+            <span>Codice CP</span><br>
+          </li>
+          <li>
+            <span>Costo Biglietto</span><br>
+            <h4 id="output-prezzo"></h4>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+  </div>
+  
+
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
